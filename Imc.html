@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="imc.css">
+</head>
+<body>
+  <header>
+<h1>Calculadora De Índice de Massa Corporal </h1>
+<h2>Apresente a seguir, seus dados para realização do calculo:</h2>
+</header>
+<p>Nome:</p>
+<input type="text" id="name" value=""/> 
+
+<p>Altura:</p>
+<input type="number" id="height" value="" /> 
+
+<p>Peso:</p>
+<input type="number" id="weight" value="" /> 
+
+<button onclick= "imc(name,height,weight)"> Show </button>
+
+<br>
+
+<table>
+  <!-- como fazer uma input de texto virar uma string em javascript-->
+  <tr> 
+    <th> Nome </th>  
+    <th> Altura </th>  
+    <th> Peso</th>
+    <th> IMC </th>
+  </tr>
+  
+  <tr>
+    <td>  <p id="n"></p> </td>
+    <td>  <p id="h"></p> </td>
+    <td>  <p id="w"></p> </td>
+    <td>  <p id="i"></p> </td>
+  </tr>
+  
+</table>
+<br>
+<p id="saida"></p> 
+
+ <img id="minha_img" > 
+ <script src="imc.js"></script>
+</body>
+</html>
